@@ -8,12 +8,11 @@ from mvlearn.embed.base import BaseEmbed
 from mvlearn.utils.utils import check_Xs
 import warnings
 
-from jive.utils import svd_wrapper, centering
-from jive.lazymatpy.templates.matrix_transformations import col_proj, col_proj_orthog
-from jive.wedin_bound import get_wedin_samples
-from jive.random_direction import sample_randdir
-from jive.viz.diagnostic_plot import plot_joint_diagnostic
-from jive.PCA import PCA
+from mvlearn.embed.JIVE.utils import svd_wrapper, centering
+from mvlearn.embed.JIVE.wedin_bound import get_wedin_samples
+from mvlearn.embed.JIVE.random_direction import sample_randdir
+from mvlearn.embed.JIVE.diagnostic_plot import plot_joint_diagnostic
+from mvlearn.embed.JIVE.PCA import PCA
 
 
 class AJIVE(object):
